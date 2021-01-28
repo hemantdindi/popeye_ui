@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'Roboto Mono Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Mono Light'), url('../fonts/Roboto_Mono/static/RobotoMono-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Mono Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Mono Regular'), url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Mono SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Mono SemiBold'), url('../fonts/Roboto_Mono/static/RobotoMono-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Mono Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Mono Thin'), url('../fonts/Roboto_Mono/static/RobotoMono-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Mono Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Mono Thin Italic'), url('../fonts/Roboto_Mono/static/RobotoMono-ThinItalic.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Roboto Mono Regular';
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 1.5 em;
+}
+
+body {
+  background-color: #fff;
+  font-size: 14px;
+  color: #39464e;
+}
+
+
+.login-clean {
+  padding: 10% 0;
+}
+
+.login-clean form {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #17202A;
+  padding: 40px;
+  border-radius: 10px;
+  color: #505e6c;
+  box-shadow: 1px 1px 5px rgba(1, 0, 0, 2);
+}
+
+.login-clean .illustration {
+  text-align: center;
+  padding: 0 0 20px;
+  padding: 0.875rem 1.25rem;
+  color: #2ECC71;
+  font-size: 100px;
+  font-family: 'Roboto Mono Thin';
+}
+
+.login-clean form .form-control {
+  background: #f7f9fc;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 8px;
+  height: 42px;
+}
+
+.login-clean form .btn-primary {
+  background: #3498db;
+  border: none;
+  border-radius: 2px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none !important;
+  width: 20%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-clean form .btn-primary:hover,
+.login-clean form .btn-primary:active {
+  background: #3498db;
+}
+
+.login-clean form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+
+/*      */
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  color: #2ECC71;
+  font-size: 50px;
+  font-family: 'Roboto Mono Thin';
+}
+.fa-dragon, .fa-wind{
+  font-size: 64px;
+  color: #2ECC71;
+}
+
+.fa-dashboard, .fa-dharmachakra, .fa-chart-bar, .fa-compress-alt, .fa-bar-chart,.fa-pie-chart {
+  color: #85929E;
+  font-size: 24px;
+  font-family: 'Roboto Mono Light';
+
+}
+
+#sidebar-wrapper .list-group {
+  width: 20rem;
+}
+
+.list-group-item {
+font-family: 'Roboto Mono Light';
+font-size: 18px;
+letter-spacing: .1em;
+
+}
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -20rem;
+  }
+}
+
+.sidebar-bg{
+  background: #17202A;
+  color: #FDFEFE;
+}
+
+.navbar-collapse a{
+  font-size: 18px;
+}
+
+
+.text-welcome {
+font-family: 'Roboto Mono Light';
+font-size: 64px;
+font-color:   #3498db;
+color:   #3498db ;
+}
+
+.text-welcome-msg {
+font-family: 'Roboto Mono Regular';
+font-size: 24px;
+}
+
+.dark-card-bg {
+background: #2e4053;
+}
