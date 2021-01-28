@@ -3,7 +3,6 @@ kind:       ClusterRole
 metadata:
   name: popeye
 rules:
-  # FIXED
   - apiGroups: ["apps"]
     resources:
       - daemonsets
@@ -42,8 +41,6 @@ rules:
       - poddisruptionbudgets
       - podsecuritypolicies
     verbs:     ["get", "list"]
-
-  # already present and correct
   - apiGroups: ["rbac.authorization.k8s.io"]
     resources:
       - clusterroles
