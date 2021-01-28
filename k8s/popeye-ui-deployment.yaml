@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: popeye-ui-deploy
+  namespace: popeye
+  labels:
+    app: popeye
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: popeye
+  template:
+    metadata:
+      labels:
+        app: popeye
+    spec:
+      serviceAccountName: popeye
+      restartPolicy: Always
+      containers:
+        - name: popeye
+          image: hemantdindi/popeye-ui:v0.1
+          ports:
+          - containerPort: 8000
+          env:
+          - name: POPEYE_REPORT_DIR
+            value: "/tmp"
+          securityContext:
+            runAsUser: 1001
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: popeye-ui-svc
+  namespace: popeye
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8000
+  selector:
+    app: popeye
